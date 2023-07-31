@@ -9,7 +9,7 @@ This program uses text files in order to determine if the password is part of th
   
       if current_modification_time > initial_modification_time:
           print("Running the password checker...")
-          Popen(["python", script_to_run])
+          Popen(["sys.executable", script_to_run])
           initial_modification_time = current_modification_time
   
       time.sleep(1)
